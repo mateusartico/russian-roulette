@@ -18,6 +18,6 @@ Disclaimer:
 This project is purely for entertainment purposes and should not be taken as an endorsement or encouragement of risky behavior. Playing Russian Roulette, even in a virtual environment, is dangerous and should never be attempted in real life.
 
 License:
-This project is licensed under the [MIT License](), allowing for open collaboration and distribution.
+This project is licensed under the [MIT License](https://github.com/mateusartico/russian-roulette/blob/main/LICENSE), allowing for open collaboration and distribution.
 
 So, are you ready to test your luck? Clone the repository and see if you can survive the Russian Roulette Shutdown!
