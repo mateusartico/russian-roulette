@@ -19,7 +19,6 @@ def input_int():
             continue
         except(KeyboardInterrupt):
             print('\n\033[33m\n[!] Bye\033[m')
-            time.sleep(2)
             sys.exit()
         else:
             return number
@@ -91,14 +90,14 @@ def start():
     time.sleep(1)
     head()
     print("You pulled the trigger 3 times... But...")
-    time.sleep(3)
+    time.sleep(2)
     if random.randint(1, 17) in [1, 2, 3]:
         print("\033[31mYou don't survived\033[m")
-        time.sleep(2)
+        time.sleep(1)
         shutdown()
     else:
         print("\033[32mYou survived\033[m")
-        time.sleep(2)
+        time.sleep(1)
 
 def menu(itens):
     head()
@@ -141,7 +140,6 @@ def exit_game():
     os.system('cls')
     head()
     print("\033[33m[.] Bye bye\033[m")
-    time.sleep(2)
     sys.exit()
 
 def shutdown():
