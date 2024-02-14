@@ -6,7 +6,6 @@ How to Play:
 1. Clone the repository to your local machine.
 2. Make sure you have Python installed.
 3. Run the main Python script.
-4. If you don't have Python installed, you can run the .exe.
 
 Why Russian Roulette Shutdown?
 While the game of Russian roulette is inherently dangerous and not recommended in real life, this project offers a safe and entertaining way to experience the tension of the game without any real risk. Plus, the added element of shutting down the computer adds a unique twist to the gameplay.
