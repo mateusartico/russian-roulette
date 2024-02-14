@@ -21,11 +21,10 @@ def input_int():
         try:
             number = int(input("> "))
         except(ValueError, TypeError):
-            print('\033[31mThis is not an option\033[m')
+            menu(['Play', 'Exit'], '\033[31m[!] This is not an option\033[m')
             continue
         except(KeyboardInterrupt):
-            print('\n\033[33m\n[!] Bye\033[m')
-            sys.exit()
+            exit_game()
         else:
             return number
 
@@ -96,7 +95,7 @@ def start():
     time.sleep(1)
     head()
     print("You pulled the trigger 3 times... But...")
-    time.sleep(2)
+    time.sleep(1)
     if random.randint(1, 17) in [1, 2, 3]:
         print("\033[31mYou don't survived\033[m")
         time.sleep(1)
@@ -105,17 +104,20 @@ def start():
         print("\033[32mYou survived\033[m")
         press_enter()
 
-def menu(itens):
+def menu(itens, message=''):
     head()
     c = 1
     for i in itens:
         print(f'{c}. {i}')
         c += 1
 
+    if message != '':
+        print(message)
+
     selection = input_int()
     while True:
         if (selection > c) or (selection < 0):
-            print('\033[31mThis is not an option\033[m')
+            menu(['Play', 'Exit'], '\033[31m[!] This is not an option\033[m')
             selection = input_int()
         elif selection == 1:
             timer(3)
@@ -144,7 +146,7 @@ _______ __ __  ______ _____|__|____    ____   _______  ____  __ __|  |   _____/ 
 def exit_game():
     os.system('cls')
     head()
-    print("\033[33m[.] Bye bye\033[m")
+    print("\033[33m\n[.] Bye bye\033[m")
     sys.exit()
 
 def shutdown():
